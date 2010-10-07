@@ -1,7 +1,7 @@
 namespace :gem do
   begin
     require 'jeweler'
-    gem_name = 'utility_drawer'
+    gem_name = 'voomify_utility_drawer'
     
     Jeweler::Tasks.new do |gem|
       gem.name = gem_name
@@ -13,6 +13,7 @@ namespace :gem do
       gem.homepage = 'http://www.github.com/voomify/utility_drawer'
       # other fields that would normally go in your gemspec also be included here
     end
+    Jeweler::GemcutterTasks.new
   rescue
     puts 'Jeweler or one of its dependencies is not installed.'
   end
