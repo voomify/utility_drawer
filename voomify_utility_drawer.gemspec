@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{voomify_utility_drawer}
-  s.version = "0.1.7"
+  s.version = "0.1.8"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Russell Edens"]
@@ -29,7 +29,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Voomify useful classes that most of our projects use}
   s.test_files = [
-    "spec/hash_extension_spec.rb"
+    "spec/httparty_base_spec.rb",
+     "spec/hash_extension_spec.rb"
   ]
 
   if s.respond_to? :specification_version then
