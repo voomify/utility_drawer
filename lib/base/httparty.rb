@@ -11,7 +11,7 @@ class ClientBase
   has_site_config "voomify.yml"  
   
 private  
-  def self.hashes2struct(object, name="Root")
+  def self.hashes2struct(object, name="Root#{object.object_id}".gsub('-',''))
       return case object
       when Hash
         object = object.clone
@@ -21,7 +21,7 @@ private
         object.to_struct(name)
       when Array
         object = object.clone
-        object.map! { |i| self.hashes2struct(i) }
+        object.map! { |i| self.hashes2struct(i, "Array#{self.object_id}".gsub('-','')) }
       else
         object
       end
