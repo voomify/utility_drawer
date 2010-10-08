@@ -1,4 +1,11 @@
-RAILS_ROOT = File.dirname(__FILE__)
+class Rails
+  def self.root
+      File.dirname(__FILE__)
+  end
+  def self.env
+    "test"
+  end
+end
 
 require 'utility_drawer'
 require 'base/httparty'

@@ -11,9 +11,9 @@ module Voomify
           end
 
           def self.load_site_config
-              raw_config = File.read("#{RAILS_ROOT}/config/#{config_name}")
+              raw_config = File.read("#{Rails.root.to_s}/config/#{config_name}")
               erb_config = ERB.new(raw_config).result
-              @site_config = YAML.load(erb_config)[RAILS_ENV]
+              @site_config = YAML.load(erb_config)[Rails.env]
           end
         STUFF
       end
