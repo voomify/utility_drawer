@@ -26,4 +26,12 @@ namespace :gem do
 
 end
 
-task :spec
+desc "Run all specs"
+task :spec do
+  require 'spec'
+  require 'spec/rake/spectask'
+  Spec::Rake::SpecTask.new(:spec) do |t|
+    t.spec_files = FileList['spec']
+    t.libs << 'lib'
+  end
+end
