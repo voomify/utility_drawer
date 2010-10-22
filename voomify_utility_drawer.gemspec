@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{voomify_utility_drawer}
-  s.version = "0.1.10"
+  s.version = "0.1.11"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Russell Edens"]
-  s.date = %q{2010-10-19}
+  s.date = %q{2010-10-22}
   s.description = %q{This gem contains a bunch of useful utilities.}
   s.email = %q{russell@voomify.com}
   s.extra_rdoc_files = [
